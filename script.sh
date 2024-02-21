@@ -7,7 +7,7 @@ runcommand ()
 #Fixing broken ubuntu dependencies for some cases 
   sudo apt update
   sudo apt upgrade
-  sudo apt --fix-broken install
+  sudo apt --fix-broken install -y
 #Installing Ubuntu Gnome Desktop
   sudo apt install ubuntu-gnome-desktop -y
   echo "Installing Gnome - Complete"
