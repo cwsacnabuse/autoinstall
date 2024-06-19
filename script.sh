@@ -21,11 +21,6 @@ runcommand ()
 #Installing p7Zip Desktop
   sudo snap install p7zip-desktop
   echo "Installing 7Zip - Complete"
-#Installing Plank  
-  sudo apt install plank -y
-  echo "Installing Plank dock - Complete"
-#Restarting pulseaudio to fix audio
-  pulseaudio --start
 #Updating Gnome and reinstalling CRD to fix the broken input issue
   sudo apt autoremove -y
   sudo apt update
