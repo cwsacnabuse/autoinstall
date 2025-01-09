@@ -5,8 +5,8 @@ echo "Executing commands ..."
 runcommand ()
 {
 #Fixing broken ubuntu dependencies for some cases 
-  sudo apt update
-  sudo apt upgrade
+  sudo apt update -y
+  sudo apt upgrade -y
   sudo apt --fix-broken install -y
 
 #Installing Kubuntu Desktop
