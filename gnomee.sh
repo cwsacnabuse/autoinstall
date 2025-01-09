@@ -10,7 +10,7 @@ runcommand ()
   sudo apt --fix-broken install -y
 
 #Installing Kubuntu Desktop
-  sudo apt-get install kubuntu-desktop -y
+  sudo apt install ubuntu-gnome-desktop -y
   echo "\e[32mInstalling Gnome - Complete\e[0m"
 
 #Installing Chrome Remote Desktop (CRD)
@@ -21,10 +21,6 @@ runcommand ()
 #Installing Chrome Browser (latest)
   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb
 echo "\e[32mInstalling Chrome Browser - Complete\e[0m"
-
-#Installing p7Zip Desktop
-  sudo snap install p7zip-desktop
-  echo "\e[32mInstalling 7Zip - Complete\e[0m"
 
 #Updating Kubuntu and reinstalling CRD to fix the broken input issue
   sudo apt autoremove -y
